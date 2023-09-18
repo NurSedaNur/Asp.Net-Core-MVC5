@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@section Css
+{
+    <link rel="stylesheet" href="~/css/example.css" asp-append-version="true" />
+
+    <style>
+        h1 {
+            color: blue;
+            Background-color: burlywood;
+        }
+    </style>
+
+}
+
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+        // alert("sayfamıza hosgeldin")
+
+        $(document).ready(function () {
+            console.log("sayfamıza hosgeldiniz");
+        })
+
+    </script>
+}
+
+<h1>"merhaba dunya"</h1>
+<hr />
+<h2>"merhaba asp.net"</h2>
+<a asp-action="Index" asp-controller="Products">Ürünler</a>

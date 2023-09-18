@@ -1,0 +1,30 @@
+﻿@using WebApplication4.Controllers
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@model List<WebApplication4.Controllers.Product>;
+
+@foreach (var item in Model)
+{
+    <p>@item.Id-@item.Name</p>
+}
+
+<h1>Ornek Controller ,Index sayfası </h1>
+
+@{
+    var name = ViewBag.name;
+    <p>@name</p>
+
+}
+
+<p>@name</p>
+
+<p>@ViewBag.name</p>
+
+<hr />
+<p>Yaş: @ViewData["age"]</p>
+
+
+
